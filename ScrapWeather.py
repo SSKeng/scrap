@@ -35,15 +35,15 @@ def city_temp(url_a):
 
 if __name__ == "__main__":
     city_tem_list = []
-#    url = 'http://www.weather.com.cn/textFC/'
-#    area_list = ['hb.shtml', 'db.shtml', 'hd.shtml', 'hz.shtml', 'hn.shtml', 'xb.shtml', 'xn.shtml']
-#    for area in area_list:
-#        city_temp(url+area)
-#        time.sleep(20)
+    url = 'http://www.weather.com.cn/textFC/'
+    area_list = ['hb.shtml', 'db.shtml', 'hd.shtml', 'hz.shtml', 'hn.shtml', 'xb.shtml', 'xn.shtml']
+    for area in area_list:
+        city_temp(url+area)
+        time.sleep(20)
 
-#    line = json.dumps(city_tem_list, ensure_ascii=False)
-#    with open('tem.json', 'w') as fp:
-#        fp.write(line.encode('utf-8'))
+    line = json.dumps(city_tem_list, ensure_ascii=False)
+    with open('tem.json', 'w') as fp:
+        fp.write(line.encode('utf-8'))
     
        
     with open('tem.json', 'r') as fp:
@@ -64,6 +64,6 @@ if __name__ == "__main__":
     echart.use(bar)
     echart.use(axis)
     echart.plot()
-    
+    fp.close()    
     
     

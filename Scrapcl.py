@@ -30,7 +30,7 @@ def get_page(page_url):
 if __name__ == '__main__':
     BASE_PAGE_URL = 'http://***.html'
     headers = {
-    'Host':'www.jnpxba.com',
+    'Host':'www.***.com',
     'Upgrade-Insecure-Requests':'1',
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36' } 
     get_page(BASE_PAGE_URL)
